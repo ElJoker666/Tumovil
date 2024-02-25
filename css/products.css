@@ -1,0 +1,132 @@
+.products-page {
+  width: 100%;
+  display: flex;
+}
+
+.products-container {
+  display: flex;
+  width: 100%;
+}
+
+.products-page .main {
+  padding: var(--space-lg) var(--space-lg) 0;
+  margin: 0;
+  margin-bottom: var(--space-lg);
+}
+
+.products-page .products__heading {
+  justify-content: flex-start;
+  align-items:baseline;
+  margin: 0;
+  gap: var(--space-xxs);
+}
+
+.products-container {
+  position: relative;
+  margin-top: var(--space-xl);
+}
+
+.dark-mode .price-label {
+  color: white;
+}
+
+/*
+***************** PRODUCT CARD *****************
+*/
+.card-small .card {
+  width: 250px;
+}
+
+.card-small .card__img {
+  height: 250px;
+}
+
+.card-small .card__title {
+  padding: var(--space-xs);
+  text-align: center;
+}
+
+.card-small .card__content {
+  padding: 0;
+}
+
+.card-small .card__price {
+  padding: 0 var(--space-xs);
+  text-align: center;
+  width: 100%;
+}
+
+.card-small .card__footer--right {
+  position: absolute;
+  top: 200px;
+  right: 5px;
+  gap: 5px;
+}
+
+.card-small .card__footer--left {
+  border-right: none;
+}
+
+.card-small .card__button {
+  padding: 0;
+}
+
+.card-small .card__footer {
+  padding: 0;
+  border-top: none;
+}
+
+.card-small .buy-button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.card-small .card__footer--right > a {
+  background-color: rgba(0, 0, 0, 0.7)
+}
+
+.card-small .card__footer--right > a:hover {
+  background-color: white;
+}
+
+.pagination-wrapper {
+  margin-top: var(--space-xl);
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  margin: auto;
+  gap: var(--space-xs);
+  align-items: center;
+  font-size: var(--fs-xs-2);
+  justify-content: center;
+}
+
+.left-slider > img {
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+
+.right-slider > img {
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.page-no {
+  padding: 1rem;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background-color: var(--secondary-theme-background);
+  border-radius: var(--br-sm);
+}
+
+.page-no:hover {
+  background-color: var(--primary);
+  transition: 0.2s ease-in;
+}
+
+.pagination .active {
+  background-color: var(--primary);
+}
